@@ -1,7 +1,7 @@
 const { Pool } = require("pg")
 
 const pool = new Pool({
-  host: "postgresql.lautaro-espinillo-dev.svc.cluster.local",
+  host: "172.30.111.250",
   user: "postgres",
   password: "r00t",
   database: "firstapi",
