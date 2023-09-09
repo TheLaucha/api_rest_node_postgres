@@ -7,7 +7,10 @@ const {
   getUserById,
   deleteUser,
   updateUser,
+  getHome,
 } = require("../controllers/index.controller")
+
+router.get("/", getHome)
 
 router.get("/users", getUsers)
 

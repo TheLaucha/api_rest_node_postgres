@@ -1,12 +1,18 @@
 const { Pool } = require("pg")
 
 const pool = new Pool({
-  host: "172.30.111.250",
-  user: "postgres",
+  host: "172.30.15.249",
+  user: "admin",
   password: "r00t",
-  database: "firstapi",
+  database: "users",
   port: "5432",
 })
+
+const getHome = (req, res) => {
+  res.status(200).json({
+    message: "Hi! this is the home page",
+  })
+}
 
 const getUsers = async (req, res) => {
   const response = await pool.query("SELECT * FROM users")
@@ -59,4 +65,5 @@ module.exports = {
   getUserById,
   deleteUser,
   updateUser,
+  getHome,
 }
