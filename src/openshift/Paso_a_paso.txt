@@ -1,0 +1,5 @@
+1- Crear base de datos postgres en openshift.
+2- Asignar secret
+3- Extraer ip del service de la base de datos y colocarlo en el codigo de la app
+4- Entrar a la base de datos desde openshift y darle permisos de al nuevo user y password creado al momento de crear la base de datos
+5- Subir repo a de la API a github y importarlo en openshift.
